@@ -1,0 +1,81 @@
+body {
+  font-family: futura, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.intro {
+  padding-top: 2em;
+}
+.scott {
+  font-size: 3em;
+  font-weight: 900;
+  letter-spacing: 12px;
+  margin-bottom: 10px;
+  margin: 50px 0;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  transition: color .5s;
+}
+
+.scott:hover{
+  color: gray;
+}
+
+.explanation {
+  color: black;
+  font-family: futura;
+  font-weight: 500;
+  letter-spacing: .25em;
+}
+
+header nav a {
+  padding-top: 3em;
+  text-transform: uppercase;
+  /*display: inline-block;*/
+  margin-right: 30px;
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: thin;
+  transition: color .25s;
+  padding-bottom: 5em;
+
+}
+
+.darling:hover{
+  color:pink;
+}
+
+.haven:hover{
+  color:blue;
+}
+
+/*.left {
+  float: left;
+  padding-left: 12em;
+}
+
+.right {
+  float: right;
+  padding-right: 12em;
+  width: 29em;
+}*/
+
+section {
+  text-align: center;
+  display: none;
+}
+section:target {
+  text-align: center;
+  display: block;
+}
+
+iframe {
+  width: 1100px;
+  height: 600px;
+}
