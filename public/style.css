@@ -7,7 +7,7 @@ body {
 .intro {
   padding-top: 2em;
 }
-.scott {
+.ben {
   font-size: 3em;
   font-weight: 900;
   letter-spacing: 12px;
@@ -19,7 +19,7 @@ body {
   transition: color .5s;
 }
 
-.scott:hover{
+.ben:hover{
   color: gray;
 }
 
@@ -54,17 +54,6 @@ header nav a {
 .haven:hover{
   color:blue;
 }
-
-/*.left {
-  float: left;
-  padding-left: 12em;
-}
-
-.right {
-  float: right;
-  padding-right: 12em;
-  width: 29em;
-}*/
 
 section {
   text-align: center;
