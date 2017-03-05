@@ -1,31 +1,37 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../src/style/index.css">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tag above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Scott Lindquist</title>
+<link rel="stylesheet" type="text/css" href="./style.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.3/jquery.fullpage.css" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Ben Henriquez</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.3/jquery.fullpage.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+          <script type="text/javascript">
+          $(document).ready(function() {
+            $('#fullpage').fullpage();
+          });
+          </script>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <div id="fullpage">
 
-      To begin the development, run `npm start`.
-      To create a production bundle, use `npm run build`.
-    -->
-  </body>
+          <div class="section">
+             <div class="intro">
+                <h1><a class="scott" href="#intro">Scott</a></h1>
+                <h3 class="explanation">I'm a front-end developer living in New York City.</h3>
+                  <img src="images/face.png"/>
+                </div>
+
+          </div>
+
+          <div class="section"><iframe src="https://darling-scott.herokuapp.com/"></iframe>
+          </div>
+          <div class="section"><iframe src="http://haven.surge.sh/"></iframe>
+          </div>
+        </div>
+    </body>
 </html>

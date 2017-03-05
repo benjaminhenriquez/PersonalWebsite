@@ -6,7 +6,11 @@
 # testing
 /coverage
 
-
+# production
+/src
+/package.json
+/README.md
+/yarn.lock
 
 # misc
 .DS_Store
