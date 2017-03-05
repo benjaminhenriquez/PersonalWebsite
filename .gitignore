@@ -7,11 +7,6 @@
 /coverage
 
 # production
-/src
-/package.json
-/README.md
-/yarn.lock
-.gitigonore
 
 # misc
 .DS_Store
