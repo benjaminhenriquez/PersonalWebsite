@@ -7,8 +7,17 @@ body {
 .intro {
   padding-top: 2em;
 }
+
+#picture_about{
+  padding-top: 2%;
+  width: 20%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .ben {
-  font-size: 3em;
+  font-size: 5em;
   font-weight: 900;
   letter-spacing: 12px;
   margin-bottom: 10px;
@@ -21,6 +30,17 @@ body {
 
 .ben:hover{
   color: gray;
+}
+
+.ben_photo{
+  width:100%;
+  height:auto;
+}
+
+.ben_about{
+  width:100%;
+  text-align: left;
+  font-size: .75em;
 }
 
 .explanation {

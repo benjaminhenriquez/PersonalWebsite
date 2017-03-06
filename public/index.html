@@ -11,27 +11,40 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-          <script type="text/javascript">
-          $(document).ready(function() {
-            $('#fullpage').fullpage();
-          });
-          </script>
 
         <div id="fullpage">
 
           <div class="section">
              <div class="intro">
-                <h1><a class="ben">Ben</a></h1>
+                <h1 class="ben">Ben</h1>
                 <h3 class="explanation">I'm a full-stack developer living in New York City.</h3>
-                  <!-- <img src="images/face.png"/> -->
+                <div id="picture_about" onclick="toggle(document.getElementById('picture_about'))"/>
+                <p class ="ben_about" style="display:none">
+                    I recently completed a competitive full stack web developer program at Flatiron School in New York.
+                    I am currently seeking new opportunities.<br/><br/>
+                    I graduated from the University of Pennsylvania with a degree in Political Science in 2011.
+                    I worked in education as an instructor, trainer and coach after graduating until
+                    I decided to pursue a career in web development.<br/>
+                </p>
+                  <img class ="ben_photo" src="images/stickman.png" style="display:block"/>
                 </div>
-
+                </div>
           </div>
-<!--
-          <div class="section"><iframe src="https://darling-scott.herokuapp.com/"></iframe>
-          </div>
-          <div class="section"><iframe src="http://haven.surge.sh/"></iframe>
-          </div> -->
         </div>
+
+        <script>
+          function toggle(el) {
+            var img = el.getElementsByTagName('img'),
+            p = el.getElementsByTagName('p');
+            for (var i = 0, len = img.length; i<len; i++){
+              img[i].style.display = img[i].style.display === 'block' ? 'none' : 'block';
+            }
+            for (var i = 0, len = p.length; i<len; i++){
+              p[i].style.display = p[i].style.display === 'none' ? 'block' : 'none';
+            }
+          }
+          </script>
+
+
     </body>
 </html>
