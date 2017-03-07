@@ -10,58 +10,64 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.3/jquery.fullpage.js"></script>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-93090656-1', 'auto');
-        ga('send', 'pageview');
-</script>
     </head>
     <body>
+      <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-93090656-1', 'auto');
+              ga('send', 'pageview');
+      </script>
         <div id="top">
-          <a href="docs/ben_henriquez_resume.pdf" target="_blank"><img class="resume" title="Download Resume!" src="images/download.png"></a>
+          <a href="docs/ben_henriquez_resume.pdf" target="_blank"><img id="resume" title="Download Resume!" src="images/download.png"></a>
         </div>
 
         <div id="fullpage">
-
-          <div class="section">
-                <h1 class="ben">Ben</h1>
-                <h3 class="explanation">I'm a full-stack developer living in New York City.</h3>
-                <div id="picture_about" onclick="toggle(document.getElementById('picture_about'))"/>
-                <p class ="ben_about" style="display:none">
+                <h1 id="ben">Ben</h1>
+                <h3 id="explanation">I'm a full-stack developer living in New York City.</h3>
+                <div id="picture_about" onmouseover="hover()" onmouseleave="revert()" >
+                <p id="ben_about" style="display:none">
                     I recently completed a competitive full stack web developer program at Flatiron School in New York.
                     I am currently seeking new opportunities.<br/><br/><br/>
                     I graduated from the University of Pennsylvania with a degree in Political Science in 2011.
                     I worked in education as an instructor, trainer and coach after graduating until
-                    I decided to pursue a career in web development.<br/><br/><br/>
+                    I decided to pursue a career in web development.
                 </p>
-                  <img class ="ben_photo" src="images/stickman.png" style="display:block"/>
-                </div>
+                  <img id="ben_photo" src="images/stickman.png" style="display:block" />
                 </div>
         </div>
 
         <div id="bottom">
-          <a  href="https://www.linkedin.com/pub/benjamin-henriquez/b5/73b/851" target="_blank" style="text-decoration:none;"><img class="links" src="images/linkedin.png"></a>
-          <a  href="https://github.com/benjaminhenriquez" target="_blank" style="text-decoration:none;"><img class="links" src="images/github.png"></a>
-          <a  href="mailto:ben@benhenriquez.com" target="_blank" style="text-decoration:none;"><img class="links" src="images/gmail.png"></a>
+          <a  href="https://www.linkedin.com/pub/benjamin-henriquez/b5/73b/851" target="_blank" style="text-decoration:none;"><img id="links" src="images/linkedin.png"></a>
+          <a  href="https://github.com/benjaminhenriquez" target="_blank" style="text-decoration:none;"><img id="links" src="images/github.png"></a>
+          <a  href="mailto:ben@benhenriquez.com" target="_blank" style="text-decoration:none;"><img id="links" src="images/gmail.png"></a>
         </div>
 
         <script>
-          function toggle(el) {
-            var img = el.getElementsByTagName('img'),
-            p = el.getElementsByTagName('p');
-            for (var i = 0, len = img.length; i<len; i++){
-              img[i].style.display = img[i].style.display === 'block' ? 'none' : 'block';
-            }
-            for (var i = 0, len = p.length; i<len; i++){
-              p[i].style.display = p[i].style.display === 'none' ? 'block' : 'none';
-            }
-          }
-        </script>
+
+        // function toggle() {
+        //   var img = document.getElementById("ben_photo");
+        //   var p = document.getElementById("ben_about");
+        //   img.style.display = (
+        //     img.style.display == "none" ? "block" : "none");
+        //   p.style.display = (
+        //     p.style.display == "none" ? "block" : "none");
+        // }
 
 
+    function hover(){
+        document.getElementById('ben_about').style.display = 'block';
+        document.getElementById('ben_photo').style.display = 'none';
+    }
+
+    function revert(){
+      document.getElementById('ben_about').style.display = 'none';
+      document.getElementById('ben_photo').style.display = 'block';
+    }
+
+</script>
     </body>
 </html>
