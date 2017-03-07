@@ -15,6 +15,10 @@ body {
   width:3%
 }
 
+#home{
+  padding-bottom: 5%;
+}
+
 #ben {
   padding-top: 0%;
   font-size: 5em;
@@ -39,7 +43,7 @@ body {
 #picture_about{
   padding-top: 2%;
   padding-bottom: 5%;
-  width: 15%;
+  width: 25%;
   height: auto;
   margin-right: auto;
   margin-left: auto;
@@ -57,6 +61,33 @@ body {
   padding-top: 2%;
   padding-bottom: 1%;
 }
+
+#project_left {
+  padding-bottom: 4%;
+}
+
+#project_right {
+  padding-bottom: 4%
+}
+
+#project_left p{
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: left
+}
+
+#project_right p{
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: left
+}
+
+
+.project_picture{
+width: 50%;
+border:1px solid #021a40;
+}
+
 
 #links{
   width:3%;
