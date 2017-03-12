@@ -26,7 +26,11 @@
           <a href="docs/ben_henriquez_resume.pdf" target="_blank"><img id="resume" title="Download Resume!" src="images/download.png"></a>
         </div></br>
 
-        <div id="fullpage">
+        <table id="page"><tr>
+
+        <td><div id="left_click" onclick="toggle()" style="display:none"><img src="images/arrow_left.png"/></div></td>
+
+        <td id="full_page">
 
           <div id="home" style="display:block" >
                 <h1 id="ben">Ben</h1>
@@ -39,13 +43,14 @@
                     I worked in education as an instructor, trainer and coach after graduating until
                     I decided to pursue a career in web development.
                   </p>
-                  <img id="ben_photo" src="images/stickman.png" style="display:block" />
+                  <img id="ben_photo" src="images/ben.jpg" style="display:block" />
                 </div><br/><br/>
-                <h4>Check out my projects below</h4>
             </div>
 
-            <div id="projects" style="display:block">
-              <div id="project_left">
+            <div id="projects" style="display:none">
+              <table id="list_projects">
+                <tr>
+                  <td>
                 <a href="http://simplify-spotify.surge.sh/" target="_blank"><h3>Simplify</h3></a>
                 <p>Simplify the way you find new musical artists.
                   Create account and pick 3 artists you like.
@@ -54,28 +59,45 @@
                   Uses ReactJS/Redux front-end UI to create an interactive single page application.
                   Application interacts with a Rails API framework for back-end database storage.
                 </p>
-                <a href="https://tul-app.herokuapp.com/" target="_blank"><img class="project_picture" src="images/simplify.png" title="Visit Site"/></a>
-              </div>
-              <div id="project_right">
+              </td>
+                <td>
+                <a href="http://simplify-spotify.surge.sh/" target="_blank"><img class="project_picture" src="images/simplify.png" title="Visit Site"/></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://lastminute.surge.sh/" target="_blank"><img class="project_picture" src="images/lastminute.png" title="Visit Site"/></a>
+              </td>
+              <td>
                 <a href="http://lastminute.surge.sh/" target="_blank"><h3>Last Minute</h3></a>
                 <p>Find bidding deals on Ebay that expire in under 10 minutes for under 10 dollars<br/><br/>
                   Uses ReactJS/Redux to create highly responsive single page application.
                   Designed UI using Materialize as well as custom CSS.
                 </p>
-                <a href="https://tul-app.herokuapp.com/" target="_blank"><img class="project_picture" src="images/lastminute.png" title="Visit Site"/></a>
-              </div>
-              <div id="project_left">
+              </td>
+            </tr>
+
+              <tr>
+              <td>
                 <a href="https://tul-app.herokuapp.com/" target="_blank"><h3>Tul</h3></a>
                 <p>Bringing the shared economy to your backyard.
                   Tul is a household tool sharing app where you can offer tools for rent or borrow tools from others near you.<br/><br/>
                   Uses Ruby on Rails with MVC framework, utilizing Postgres database to store data.
                   Displays location of nearby tools using Google Maps API, and used Bootstrap for front end design.
                 </p>
+              </td>
+              <td>
                 <a href="https://tul-app.herokuapp.com/" target="_blank"><img class="project_picture" src="images/tul.png" title="Visit Site"/></a>
-              </div>
+              </td>
+            </tr>
+          </table>b
             </div>
 
-        </div></br>
+        </td>
+
+        <td><div id="right_click" onclick="toggle()" style="display:block"><img src="images/arrow_right.png"/></div></td>
+
+      </tr></table>
 
         <div id="bottom">
           <a  href="https://www.linkedin.com/pub/benjamin-henriquez/b5/73b/851" target="_blank" style="text-decoration:none;"><img id="links" src="images/linkedin.png"></a>
@@ -88,10 +110,16 @@
           function toggle() {
             var h = document.getElementById("home");
             var p = document.getElementById("projects");
+            var l = document.getElementById("left_click");
+            var r = document.getElementById("right_click");
             h.style.display = (
               h.style.display == "none" ? "block" : "none");
+              l.style.display = (
+                l.style.display == "none" ? "block" : "none");
             p.style.display = (
               p.style.display == "none" ? "block" : "none");
+              r.style.display = (
+                r.style.display == "none" ? "block" : "none");
           }
 
 

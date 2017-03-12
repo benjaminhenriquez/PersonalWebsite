@@ -4,6 +4,36 @@ body {
   text-transform: uppercase;
 }
 
+td{
+  width:15%
+}
+
+tr{
+  height:20em;
+}
+
+#left_click{
+  width: 50%
+}
+
+
+#right_click{
+  width: 50%
+}
+
+#left_click img{
+  width: 100%
+}
+
+
+#right_click img{
+  width: 100%
+}
+
+
+#full_page{
+  width: 70%
+}
 
 #resume{
   width: 2%;
