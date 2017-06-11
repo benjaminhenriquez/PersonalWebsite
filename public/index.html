@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>BenHenriquez</title>
-      <link rel="shortcut icon" href="favicon.png"/>
-      <link rel="stylesheet" type="text/css" href="./style.css" />
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.3/jquery.fullpage.css" />
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.3/jquery.fullpage.js"></script>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+        <title>BenHenriquez</title>
+
+        <link rel="shortcut icon" href="favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+
+        <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
           ga('create', 'UA-93090656-1', 'auto');
           ga('send', 'pageview');
-
-      </script>
+        </script>
     </head>
     <body>
 
-        <div id="top">
-          <a href="docs/ben_henriquez_resume.pdf" target="_blank" id="resume"><img src="images/download.png">
+        <header>
+          <a href="resources/docs/ben_henriquez_resume.pdf" target="_blank" id="resume"><img src="resources/images/download.png">
           <span id="resumetext">Download Resume!</span></a>
-        </div></br>
+        </header></br>
 
         <table id="page"><tr>
 
-        <td class="td"><div id="left_click" onclick="toggle()" style="display:none"><img src="images/arrow_left.png"/></div></td>
+        <td class="td"><div id="left_click" onclick="toggle()" style="display:none"><img src="resources/images/arrow_left.png"/></div></td>
 
         <td id="full_page">
 
@@ -45,7 +46,7 @@
                     I worked in education as an instructor, trainer and coach after graduating until
                     I decided to pursue a career in web development.
                   </p>
-                  <img id="ben_photo" src="images/benjamin.jpg" style="display:block" />
+                  <img id="ben_photo" src="resources/images/benjamin.jpg" style="display:block" />
                 </div>
             </div>
 
@@ -63,12 +64,12 @@
                 </p>
               </td>
                 <td>
-                <a href="http://simplify-spotify.surge.sh/" target="_blank"><img class="project_picture" src="images/simplify.png" title="Visit Site"/></a>
+                <a href="http://simplify-spotify.surge.sh/" target="_blank"><img class="project_picture" src="resources/images/simplify.png" title="Visit Site"/></a>
               </td>
             </tr>
             <tr>
               <td>
-                <a href="http://lastminute.surge.sh/" target="_blank"><img class="project_picture" src="images/lastminute.png" title="Visit Site"/></a>
+                <a href="http://lastminute.surge.sh/" target="_blank"><img class="project_picture" src="resources/images/lastminute.png" title="Visit Site"/></a>
               </td>
               <td>
                 <a href="http://lastminute.surge.sh/" target="_blank"><h3>Last Minute</h3></a>
@@ -89,7 +90,7 @@
                 </p>
               </td>
               <td>
-                <a href="https://tul-app.herokuapp.com/" target="_blank"><img class="project_picture" src="images/tul.png" title="Visit Site"/></a>
+                <a href="https://tul-app.herokuapp.com/" target="_blank"><img class="project_picture" src="resources/images/tul.png" title="Visit Site"/></a>
               </td>
             </tr>
           </table>
@@ -97,44 +98,16 @@
 
         </td>
 
-        <td class="td"><div id="right_click" onclick="toggle()" style="display:block"><img src="images/arrow_right.png"/></div></td>
+        <td class="td"><div id="right_click" onclick="toggle()" style="display:block"><img src="resources/images/arrow_right.png"/></div></td>
 
       </tr></table>
 
         <div id="bottom">
-          <a  class="links" href="https://www.linkedin.com/pub/benjamin-henriquez/b5/73b/851" target="_blank" style="text-decoration:none;"><img src="images/linkedin.png"><span class="linktext">Connect with me on LinkedIn</span></a>
-          <a  class="links" href="https://github.com/benjaminhenriquez" target="_blank" style="text-decoration:none;"><img  src="images/github.png"><span class="linktext">Check out my Github repositories</span></a>
-          <a  class="links" href="mailto:ben@benhenriquez.com" target="_blank" style="text-decoration:none;"><img  src="images/gmail.png"><span class="linktext">Send me an Email</span></a>
+          <a  class="links" href="https://www.linkedin.com/pub/benjamin-henriquez/b5/73b/851" target="_blank" style="text-decoration:none;"><img src="resources/images/linkedin.png"><span class="linktext">Connect with me on LinkedIn</span></a>
+          <a  class="links" href="https://github.com/benjaminhenriquez" target="_blank" style="text-decoration:none;"><img  src="resources/images/github.png"><span class="linktext">Check out my Github repositories</span></a>
+          <a  class="links" href="mailto:ben@benhenriquez.com" target="_blank" style="text-decoration:none;"><img  src="resources/images/gmail.png"><span class="linktext">Send me an Email</span></a>
         </div>
 
-        <script>
-
-          function toggle() {
-            var h = document.getElementById("home");
-            var p = document.getElementById("projects");
-            var l = document.getElementById("left_click");
-            var r = document.getElementById("right_click");
-            h.style.display = (
-              h.style.display == "none" ? "block" : "none");
-              l.style.display = (
-                l.style.display == "none" ? "block" : "none");
-            p.style.display = (
-              p.style.display == "none" ? "block" : "none");
-              r.style.display = (
-                r.style.display == "none" ? "block" : "none");
-          }
-
-
-          function about(){
-            document.getElementById('ben_about').style.display = 'block';
-            document.getElementById('ben_photo').style.display = 'none';
-          }
-
-          function picture(){
-            document.getElementById('ben_about').style.display = 'none';
-            document.getElementById('ben_photo').style.display = 'block';
-          }
-
-      </script>
+        <script type="text/javascript" src="resources/js/index.js"></script>
     </body>
 </html>
